@@ -277,7 +277,7 @@
     <!-- ─── HEADER ─── -->
     <header class="header">
         <div class="hd-photo">
-            <img src="https://avatars.githubusercontent.com/u/139817600?v=4" alt="Foto de perfil de Pedro Chacolla">
+            <img src="CELESTE.JPG" alt="Foto de perfil de Pedro Chacolla">
         </div>
         <div class="hd-info">
             <div class="hd-name">Pedro Abad Chacolla E.</div>
@@ -648,6 +648,45 @@
 
     </div>
 </div>
+<!-- FLOATING PDF BUTTONS START -->
+<div class="cv-pdf-fab" aria-label="Descargar CV en PDF">
+  <a href="cv-software-engineer-color.pdf" download="Pedro-Chacolla-CV-Color.pdf" class="fab-btn fab-color">PDF Color</a>
+  <a href="cv-software-engineer-harvard.pdf" download="Pedro-Chacolla-CV-Harvard.pdf" class="fab-btn fab-harvard">PDF Harvard</a>
+</div>
+<style>
+.cv-pdf-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+.cv-pdf-fab .fab-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  color: #fff;
+}
+.cv-pdf-fab .fab-color { background: #0a7a78; }
+.cv-pdf-fab .fab-harvard { background: #1f2937; }
+.cv-pdf-fab .fab-btn:hover { transform: translateY(-1px); }
+@media (max-width: 640px) {
+  .cv-pdf-fab { right: 10px; bottom: 10px; gap: 8px; }
+  .cv-pdf-fab .fab-btn { font-size: 12px; padding: 9px 12px; }
+}
+@media print {
+  .cv-pdf-fab { display: none !important; }
+}
+</style>
+<!-- FLOATING PDF BUTTONS END -->
 </body>
 </html>
 
